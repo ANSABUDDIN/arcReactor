@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function hideLoader() {
   const loader = document.querySelector(".loader");
-  const content = document.querySelector(".content");
+  const content = document.quserySelector(".content");
 
   loader.style.display = "none";
-  content.classList.remove("d-none");
+  content.classList.remove("invisible");
 }

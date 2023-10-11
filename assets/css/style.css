@@ -148,8 +148,11 @@ a {
 }
 .loader{
     background-color: var(--dark-blue);
-    min-height: 100vh;
+    min-height: 100% !important;
+    z-index: 999999;
     display: flex;
+    position: absolute;
+    width: 100% !important;
     justify-content: center;
     align-items: center;
 }
