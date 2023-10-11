@@ -159,6 +159,9 @@ a {
     top: 0;
     align-items: center;
 }
+.header_web .logo{
+    width: 300px;
+  }
 .opacity-0{
     opacity: 0;
 }
@@ -167,6 +170,9 @@ a {
     min-height: 70vh;
     overflow: hidden;
     max-height: 70vh;
+  }
+  .header_web .logo{
+    width: 200px;
   }
   .header_web {
    width: 95%;
