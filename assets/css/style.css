@@ -168,4 +168,9 @@ a {
     overflow: hidden;
     max-height: 70vh;
   }
+  .header_web {
+   width: 95%;
+    height: 50px;
+    
+  }
 }
