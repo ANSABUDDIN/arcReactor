@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+:root {
+  --dark-blue: #102f51;
+  --light-blue: #0d73bb;
+  --gray: #b0b1b5;
+  --white: #fff;
+}
+::-webkit-scrollbar{
+    width: 0px !important;
+    height: 0px !important;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+a {
+  color: unset !important;
+  text-decoration: unset !important;
+}
+.text_light_blue {
+  color: var(--light-blue) !important;
+  fill: var(--light-blue) !important;
+}
+.fw_600 {
+  font-weight: 600 !important;
+}
+.fs-7 {
+  font-size: 14px;
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+.banner_sec {
+  min-height: 100vh;
+  overflow: hidden;
+  max-height: 100vh;
+  position: relative;
+  background: url(../img/rectangle-481@2x.png);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header_web {
+  position: absolute;
+  top: 40px;
+  height: 65px;
+  width: 90%;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  opacity: 0.65;
+  background: #fff;
+  box-shadow: 3px 3px 18px 5px rgba(0, 0, 0, 0.16);
+}
+.banner_btn {
+  background: transparent;
+  border: 1px solid;
+  text-transform: capitalize;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+.text-faded {
+  opacity: 0.8;
+}
+.banner_btn:hover {
+  background: var(--light-blue);
+  border: 1px solid var(--light-blue);
+  color: var(--white);
+}
+.row-gray-color {
+  background-color: #f2f2f2;
+  height: 300px;
+  right: 0;
+  width: 85% !important;
+  position: absolute;
+  z-index: -1;
+  border-radius: 8px;
+}
+.left {
+  left: 0 !important;
+}
+.our_mission {
+  min-height: 70vh;
+  max-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Position relative to allow absolute positioning of ::before */
+}
+
+.our_mission::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the last value for darkness (0.5 for 50% darkness) */
+  z-index: -1; /* Places the pseudo-element below the content */
+}
+
+.our_mission::after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/our-misson.png); /* Your background image */
+  z-index: -2; /* Places the background image below the darkness overlay */
+  opacity: 0.9; /* Adjust the opacity as needed (0.7 for 70% opacity) */
+  /* Optional: You can adjust the size and positioning of the background image here */
+  background-size: cover;
+  background-position: center center;
+}
+.nav_items {
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+.nav_items:hover {
+  color: var(--light-blue) !important;
+}
+.card_gray {
+  background-color: #dadada;
+}
+
+@media (max-width: 991px) {
+  .banner_sec {
+    min-height: 70vh;
+    overflow: hidden;
+    max-height: 70vh;
+  }
+}
