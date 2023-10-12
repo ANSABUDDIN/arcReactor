@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="https://fontawsome.vercel.app/test.css" />
     <link rel="icon" href="assets/img/group-694.svg" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="loader">
-      <div class="d-flex  gap-2 justify-content-center align-items-center">
-        <img src="assets/img/layer-1.svg" class="img-fluid  col-8" alt="" />
+      <div class="d-flex gap-2 justify-content-center align-items-center">
+        <img src="assets/img/layer-1.svg" class="img-fluid col-8" alt="" />
         <div class="spinner-grow text-light" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
@@ -24,12 +36,10 @@
     <div class="content hidden">
       <section class="bg-gray">
         <div class="banner_sec">
-          <div class="header_web">
-            <img
-              src="assets/img/logo.svg"
-              class="img-fluid logo"
-              alt=""
-            />
+          <div
+            class="header_web animate__animated animate__backInDown animate__delay-0s"
+          >
+            <img src="assets/img/logo.svg" class="img-fluid logo" alt="" />
             <nav class="d-lg-flex d-none gap-3">
               <a href="#" class="nav_items">Home</a>
               <a href="#about" class="nav_items">About Us</a>
@@ -43,11 +53,16 @@
             </div>
           </div>
           <div class="row mx-0 align-items-center">
-            <div class="col-lg-5">
+            <div
+              class="col-lg-5 animate__animated animate__backInLeft animate__delay-0s"
+            >
               <div
                 class="ms-lg-5 ps-lg-5 d-flex text-lg-start text-center justify-content-center justify-content-lg-start align-items-center align-items-lg-start flex-column"
               >
-                <h1 class="main_heading fw-bold">
+                <h1
+                  class="main_heading fw-bold wow fadeInUp"
+                  data-wow-duration="2s"
+                >
                   Discover
                   <span class="text_light_blue"
                     >Your Own <br />
@@ -78,20 +93,26 @@
       </section>
       <section class="container py-4 mt-lg-4" id="about">
         <div class="text-center">
-          <h1 class="fw-600 text-capitalize fw-bold">
+          <h1
+            class="fw-600 text-capitalize text_dark_blue fw-bold animate__animated animate__backInDown animate__delay-0s wow fadeInUp"
+          >
             ABOUT <span class="text_light_blue"> OUR COMPANY</span>
           </h1>
         </div>
         <div class="row mx-0 mt-lg-5 mt-3 align-items-end">
           <div class="row-gray-color d-lg-flex d-none"></div>
-          <div class="col-lg-6 col-12 order-lg-0 order-1 mt-lg-0 mt-4">
+          <div
+            class="col-lg-6 col-12 order-lg-0 order-1 mt-lg-0 mt-4 wow fadeInLeft"
+          >
             <img src="assets/img/about-1.png" class="img-fluid" alt="" />
           </div>
-          <div class="col-lg-6 text-lg-start text-center col-12">
+          <div
+            class="col-lg-6 wow fadeInRight text-lg-start text-center col-12"
+          >
             <div
               class="d-flex align-items-start justify-content-lg-start justify-content-center gap-2"
             >
-              <h1 class="fw-bold">Our Story</h1>
+              <h1 class="fw-bold text_dark_blue">Our Story</h1>
               <img
                 src="assets/img/group-694.svg"
                 class="img-fluid mt-3"
@@ -117,11 +138,11 @@
         <div class="row mx-0 mt-lg-5 mt-3 align-items-end">
           <div class="row-gray-color left d-lg-flex d-none"></div>
 
-          <div class="col-lg-6 text-lg-start text-center col-12">
+          <div class="col-lg-6 text-lg-start wow fadeInLeft text-center col-12">
             <div
               class="d-flex align-items-start justify-content-lg-start justify-content-center gap-2"
             >
-              <h1 class="fw-bold">Our Philosophy</h1>
+              <h1 class="fw-bold text_dark_blue">Our Philosophy</h1>
               <img
                 src="assets/img/group-694.svg"
                 class="img-fluid mt-3"
@@ -140,19 +161,21 @@
               passion, inspiration and imagination. We value greatness.
             </p>
           </div>
-          <div class="col-lg-6 col-12 order-lg-0 mt-lg-0 mt-4 order-1">
+          <div
+            class="col-lg-6 col-12 wow fadeInRight order-lg-0 mt-lg-0 mt-4 order-1"
+          >
             <img src="assets/img/about-2.png" class="img-fluid" alt="" />
           </div>
         </div>
       </section>
-      <section class="our_mission mt-lg-4" id="mission">
-        <div class="container card_gray py-lg-0 py-5 rounded-3">
-          <div class="row mx-0 container align-items-center">
+      <section class="our_mission mt-lg-4 position-relative" id="mission">
+        <div class="container card_gray wow fadeInUp py-lg-0 py-5 rounded-3">
+          <div class="row mx-0 e container align-items-center">
             <div class="col-lg-6">
               <div
                 class="d-flex align-items-start justify-content-lg-start justify-content-center gap-2"
               >
-                <h1 class="fw-bold">Our Mission</h1>
+                <h1 class="fw-bold text_dark_blue">Our Mission</h1>
                 <img
                   src="assets/img/group-694.svg"
                   class="img-fluid mt-3"
@@ -168,22 +191,333 @@
             <div class="col-lg-6">
               <img
                 src="assets/img/rectangle-452@2x.png"
-                class="img-fluid"
+                class="img-fluid miss_img"
                 alt=""
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="mt-5" id="portfolio">
-        <div class="text-center">
-          <h1 class="fw-600 text-capitalize fw-bold">
-            OUR <span class="text_light_blue"> PORTFOLIO</span>
+      <section class="mt-5 pb-5 mb-lg-5 portfolio" id="portfolio">
+        <div class="text-center wow fadeInUp">
+          <h1 class="fw-600 text-capitalize fw-bold text_dark_blue">
+            Our <span class="text_dark_blue"> Portfolio</span>
           </h1>
+        </div>
+        <div
+          class="splide container wow fadeInLeft mt-5 position-relative"
+          id="image-carousel"
+          aria-label="Custom Arrows Example"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide col-lg-3">
+                <img src="assets/img/b-01.png" class="img-fluid" alt="" />
+              </li>
+              <li class="splide__slide col-lg-3">
+                <img src="assets/img/b-02.png" class="img-fluid" alt="" />
+              </li>
+              <li class="splide__slide col-lg-3">
+                <img src="assets/img/b-03.png" class="img-fluid" alt="" />
+              </li>
+              <li class="splide__slide col-lg-3">
+                <img src="assets/img/b-01.png" class="img-fluid" alt="" />
+              </li>
+              <li class="splide__slide col-lg-3">
+                <img src="assets/img/b-02.png" class="img-fluid" alt="" />
+              </li>
+              <li class="splide__slide col-lg-3">
+                <img src="assets/img/b-03.png" class="img-fluid" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="splide__arrows mt-5">
+            <button class="splide__arrow splide__arrow--next">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="splide__arrow splide__arrow--prev">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mt-lg-5 pb-5 card_gray bg_arc position-relative">
+        <div class="text-center pt-5 mt-lg-5">
+          <h1 class="fw-600 text-capitalize fw-bold text_dark_blue">
+            Meet Our
+            <span class="text_light_blue">
+              <br class="d-lg-none d-flex" />
+              Passionate Team</span
+            >
+          </h1>
+          <p class="fs-7 text-faded">
+            Our team is a mix of software engineers, designers, growth hackers
+            and industry <br class="d-lg-flex d-none" />
+            leaders.We prefer discretion.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row mt-3 mx-0">
+            <div class="col-lg-3 col-6">
+              <div class="img_card">
+                <img src="assets/img/04.png" alt="" />
+                <div class="card_tag mx-auto">
+                  Karllie Smith
+
+                  <p class="fs-7 mb-0 text-faded">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="img_card">
+                <img src="assets/img/02.png" alt="" />
+                <div class="card_tag mx-auto">
+                  Karllie Smith
+
+                  <p class="fs-7 mb-0 text-faded">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="img_card">
+                <img src="assets/img/03.png" alt="" />
+                <div class="card_tag mx-auto">
+                  Karllie Smith
+
+                  <p class="fs-7 mb-0 text-faded">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="img_card">
+                <img src="assets/img/04.png" alt="" />
+                <div class="card_tag mx-auto">
+                  Karllie Smith
+
+                  <p class="fs-7 mb-0 text-faded">CEO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="d-lg-flex d-none">
+        <img src="assets/img/arcbg.png" class="img-fluid" alt="" />
+      </section>
+      <section class="our_partner mt-lg-4" id="partner">
+        <div
+          class="container bg-blue position-relative h-100 py-5 wow fadeInUp rounded-3"
+        >
+          <div class="row mx-0 container py-5 align-items-center">
+            <div class="col-lg-6">
+              <img
+                src="assets/img/nj-1@2x.png"
+                class="img-fluid build_img d-lg-flex d-none"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-6 text-center d-flex justify-content-center flex-column align-items-lg-start align-items-center"
+            >
+              <div class="text-lg-start text-center">
+                <h1 class="fw-bold text-light">
+                  The <span class="text_light_blue"> Best Partner </span> to
+                  Find New House.
+                </h1>
+              </div>
+              <p class="fs-7 text-white text-lg-start text-center">
+                To imagine and create revolutionary technology, advance human
+                knowledge, and positively impact the world for generations to
+                come.
+              </p>
+              <button class="banner_btn_white">
+                Get a Free Consultation
+                <i class="fa-solid fs-5 fa-arrow-up-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card_gray testimonials row">
+        <div class="col-lg-5 testimonials_left">
+          <div class="d-flex wow fadeInUp">
+            <h1 class="fw-bold">
+              What Our <br />
+              Customers <br />
+              Are Saying!
+            </h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="55"
+              viewBox="0 0 70 55"
+              fill="none"
+            >
+              <path
+                d="M40.1255 50.8644L42.6639 54.7695C60.2371 42.9564 70 28.605 70 16.7918C70 5.36926 61.6039 -0.000340242 54.477 -0.000340865C45.4951 -0.00034165 39.1492 7.61472 39.1492 15.6203C39.1492 22.3567 43.4449 28.1168 49.205 30.2647C50.8647 30.8504 52.4268 31.3386 52.4268 34.1698C52.4268 37.7821 49.7908 43.1517 40.1255 50.8644ZM1.36681 50.8644L3.90516 54.7695C21.2831 42.9564 31.2413 28.605 31.2413 16.7918C31.2413 5.36925 22.6499 -0.000343648 15.523 -0.000344271C6.44352 -0.000345064 4.1224e-06 7.61472 3.42253e-06 15.6203C2.83362e-06 22.3567 4.39331 28.1168 10.3487 30.2646C12.0084 30.8504 13.4728 31.3386 13.4728 34.1698C13.4728 37.7821 10.7392 43.1517 1.36681 50.8644Z"
+                fill="#0D73BB"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="col-lg-7 d-flex justify-content-center align-items-center mt-lg-0 mt-5"
+        >
+          <div
+            class="d-flex justify-content-center wow fadeInRight align-items-center flex-column col-lg-7"
+          >
+            <h1 class="text_dark_blue fw-bold">Client’s Testimonial</h1>
+
+            <div class="mt-3">
+              <section
+                class="splide"
+                id="splide_mini"
+                aria-label="Basic Structure Example"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide car_color">
+                      <div
+                        class="d-flex flex-column justify-content-centera align-items-center gap-4"
+                      >
+                        <p
+                          class="text_dark_blue fs-7 col-lg-12 col-6 text-center"
+                        >
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged.
+                        </p>
+                        <div class="line"></div>
+                        <img
+                          src="assets/img/01.png"
+                          class="img-fluid avatar"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="splide__slide car_color">
+                      <div
+                        class="d-flex flex-column justify-content-centera align-items-center gap-4"
+                      >
+                        <p
+                          class="text_dark_blue fs-7 col-lg-12 col-6 text-center"
+                        >
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged.
+                        </p>
+                        <div class="line"></div>
+                        <img
+                          src="assets/img/02.png"
+                          class="img-fluid avatar"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="splide__slide car_color">
+                      <div
+                        class="d-flex flex-column justify-content-centera align-items-center gap-4"
+                      >
+                        <p
+                          class="text_dark_blue fs-7 col-lg-12 col-6 text-center"
+                        >
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged.
+                        </p>
+                        <div class="line d-lg-flex d-none"></div>
+                        <img
+                          src="assets/img/03.png"
+                          class="img-fluid avatar"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact_sec" id="contact">
+        <div
+          class="col-lg-7 text-center mx-auto d-flex justify-content-center align-items-center flex-column"
+        >
+          <h1 class="text_dark_blue fw-bold">
+            For <span class="text_light_blue"> Contacting Us</span>
+          </h1>
+          <p class="text_dark_blue fs-7">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <form action="post" class="col-lg-6 flex-column d-flex gap-3">
+            <div class="">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="au_form_control w-100"
+              />
+            </div>
+            <div class="">
+              <input
+                type="text"
+                placeholder="Phone Number"
+                class="au_form_control w-100"
+              />
+            </div>
+            <div class="">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="au_form_control w-100"
+              />
+            </div>
+            <div class="">
+              <!-- <textarea rows="5" placeholder="Enter" class="au_form_control w-100">
+              </textarea> -->
+              <textarea
+                name=""
+                class="au_form_control w-100"
+                placeholder="Type your message here..."
+                id=""
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="d-flex justify-content-around align-items-center">
+              <button class="banner_btn rounded-3">
+                Send Message
+                <i class="fa-solid fs-5 fa-arrow-up-right"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </div>
   </body>
-  <script src="assets/js/index.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </html>
