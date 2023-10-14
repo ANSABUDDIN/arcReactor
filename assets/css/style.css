@@ -148,7 +148,9 @@ a {
   align-items: center;
   position: relative; /* Position relative to allow absolute positioning of ::before */
 }
-
+.rounded-4 {
+  border-radius: 10px !important;
+}
 .our_mission::before {
   content: ""; /* Required for pseudo-elements */
   position: absolute;
@@ -303,13 +305,14 @@ a {
 }
 
 .testimonials_left {
-  background-color: var(--dark-blue);
   color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
   display: flex;
   /* position: absolute; */
+  /* background: url(../img/rectangle-481@2x.png); */
+  background-color: var(--dark-blue);
   border-bottom-right-radius: 50px;
   height: 80% !important;
 }
@@ -350,8 +353,8 @@ a {
   outline: unset;
 }
 .contact_sec {
-  min-height: 70vh;
-  height: 70vh;
+  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -415,7 +418,7 @@ a {
   .card_tag p {
     font-size: 10px !important;
     height: auto;
-    padding: 3px 0px;
+    padding: 2px 0px;
   }
 
   .bg_arc::before {
