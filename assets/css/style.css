@@ -50,9 +50,9 @@ a {
   background-color: var(--dark-blue);
 }
 .banner_sec {
-  min-height: 100vh;
+  min-height: 80vh;
   overflow: hidden;
-  max-height: 100vh;
+  max-height: 80vh;
   position: relative;
   background: url(../img/rectangle-481@2x.png);
   background-color: rgba(255, 255, 255, 0.5);
